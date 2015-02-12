@@ -1,4 +1,4 @@
-# headerfooter
+# stream-headerfooter
 
 This module lets you send headers and footers along with ANY standard node/io stream. Use this module to pass JSON objects from readable to writable streams when they first start (headers) and when they end (footers). This module provides:
 
@@ -9,7 +9,7 @@ This module lets you send headers and footers along with ANY standard node/io st
 
 ## Installation
 ```bash
-npm install --save headerfooter
+npm install --save stream-headerfooter
 ```
 
 ## Basic usage
@@ -17,7 +17,7 @@ npm install --save headerfooter
 ### Include
 
 ```javascript
-var headerfooter = require('headerfooter')
+var headerfooter = require('stream-headerfooter')
 ```
 
 ### Setup Your Outgoing Stream

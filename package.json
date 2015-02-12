@@ -1,5 +1,5 @@
 {
-    "name": "headerfooter",
+    "name": "stream-headerfooter",
     "version": "1.0.0",
     "description": "Transmit headers and footers at the start and end of streams.",
     "main": "main.js",
