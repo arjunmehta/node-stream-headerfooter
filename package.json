@@ -1,6 +1,6 @@
 {
     "name": "stream-headerfooter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Transmit headers and footers at the start and end of streams.",
     "main": "main.js",
     "scripts": {
@@ -15,7 +15,6 @@
         "streams",
         "parse"
     ],
-    "readme": "README.md",
     "author": "Arjun Mehta",
     "license": "MIT",
     "dependencies": {
