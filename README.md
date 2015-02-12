@@ -1,5 +1,7 @@
 # stream-headerfooter
 
+[![Build Status](https://travis-ci.org/arjunmehta/node-stream-headerfooter.svg?branch=master)](https://travis-ci.org/arjunmehta/node-stream-headerfooter)
+
 This module provides the ability to attach headers and footers into any standard node/io.js stream pipeline to be read further downstream. JMore specifically, this module provides:
 
 - **The ability to pass JSON objects along streams when they first start (headers) and when they end (footers).**
