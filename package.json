@@ -1,0 +1,35 @@
+{
+    "name": "headerfooter",
+    "version": "1.0.0",
+    "description": "Transmit headers and footers at the start and end of streams.",
+    "main": "main.js",
+    "scripts": {
+        "test": "nodeunit test/test.js"
+    },
+    "keywords": [
+        "headers",
+        "footers",
+        "header",
+        "footer",
+        "stream",
+        "streams",
+        "parse"
+    ],
+    "readme": "README.md",
+    "author": "Arjun Mehta",
+    "license": "MIT",
+    "dependencies": {
+        "buffertools": "~2.1.2"
+    },
+    "devDependencies": {
+        "nodeunit": "~0.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arjunmehta/node-headerfooter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/arjunmehta/node-headerfooter/issues"
+    },
+    "homepage": "https://github.com/arjunmehta/node-headerfooter"
+}
