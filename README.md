@@ -1,11 +1,12 @@
 # stream-headerfooter
 
-This module lets you send headers and footers along with ANY standard node/io stream. Use this module to pass JSON objects from readable to writable streams when they first start (headers) and when they end (footers). This module provides:
+This module provides the ability to attach headers and footers into any standard node/io.js stream pipeline to be read further downstream. JMore specifically, this module provides:
 
-- A simple, easy to use and unobtrusive interface using stream piping.
-- Evented streams give access to 'header' and 'footer' events.
-- Automatic stream sanitation after events are captured, perfect for fitting in your pipeline.
-- Flexible header/footer typing (string, number, object or array).
+- **The ability to pass JSON objects along streams when they first start (headers) and when they end (footers).**
+- **A simple, easy to use interface using stream piping.**
+- **Evented streams to give access to 'header' and 'footer' events.**
+- **Automatic stream sanitation after events are captured, perfect for fitting in your pipeline.**
+- **Flexible header/footer typing (string, number, object or array).**
 
 ## Installation
 ```bash
@@ -36,27 +37,27 @@ The output of your outgoing streams will need to be channeled to a receiving str
 var read_headerfooter = new headerfooter.In()
 
 read_headerfooter.on('header', function(header) {
-    console.log('Stream Header:', header);
-});
+    console.log('Stream Header:', header)
+})
 
 read_headerfooter.on('footer', function(footer) {
-    console.log('Stream Footer:', footer);
-});
+    console.log('Stream Footer:', footer)
+})
 
 read_headerfooter.on('data', function(data) {
-    console.log('Stream Data:', data); // sanitized stream data without header and footer data in buffer
-});
+    console.log('Stream Data:', data) // sanitized stream data without header and footer data in buffer
+})
 ```
 
 ### Pipe To and From Any Stream!
 You can now pipe your headers and footers from one place to another through any number of streams. `header` and `footer` events, as well as all other native node/io.js stream events can be captured (if they have handlers).
 
 ```javascript
-var passthroughA = new PassThrough(); // dummy
-var passthroughB = new PassThrough(); // dummy
+var passthroughA = new PassThrough() // dummy
+var passthroughB = new PassThrough() // dummy
 
 passthroughA.pipe(add_headerfooter).pipe(passthroughB)
-passthroughB.pipe(read_headerfooter);
+passthroughB.pipe(read_headerfooter)
 
 passthroughA.write('Testing... 123')
 passthroughA.end("...Ending")
