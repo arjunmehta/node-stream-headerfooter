@@ -49,7 +49,7 @@ read_headerfooter.on('data', function(data) {
 ```
 
 ### Pipe To and From Any Stream!
-You can now pipe to and from the streams
+You can now pipe to and from your streams. `header` and `footer` events, as well as all other native node/io.js stream events that have handlers can be captured.
 
 ```javascript
 var passthroughA = new PassThrough(); // dummy
