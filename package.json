@@ -26,10 +26,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/arjunmehta/node-headerfooter.git"
+        "url": "https://github.com/arjunmehta/node-stream-headerfooter.git"
     },
     "bugs": {
-        "url": "https://github.com/arjunmehta/node-headerfooter/issues"
+        "url": "https://github.com/arjunmehta/node-stream-headerfooter/issues"
     },
-    "homepage": "https://github.com/arjunmehta/node-headerfooter"
+    "homepage": "https://github.com/arjunmehta/node-stream-headerfooter"
 }
