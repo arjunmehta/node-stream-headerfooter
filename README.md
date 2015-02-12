@@ -20,7 +20,7 @@ npm install --save headerfooter
 var headerfooter = require('headerfooter')
 ```
 
-### Set Your Outgoing Stream
+### Setup Your Outgoing Stream
 Your outgoing stream is the stream you want to attach JSON headers/footers to. Just add your `header` before your stream begins, and add your `footer` before your stream ends. The outgoing stream is a duplex transform stream, so it can be piped to AND from.
 
 ```javascript
@@ -29,7 +29,7 @@ add_headerfooter.header = { name: "streamA", metadata:[23, 33, 221, 222] }
 add_headerfooter.footer = { exit_code: 2 }
 ```
 
-### Set Your Incoming Stream
+### Setup Your Incoming Stream
 The output of your outgoing streams will need to be channeled to a receiving stream that will emit `header` and `footer` events as they are received. Create an incoming stream and create event handlers to read in headers and footers from your stream. The incoming stream is also a duplex transform stream, so it can be piped to AND from.
 
 ```javascript
