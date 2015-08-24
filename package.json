@@ -1,35 +1,35 @@
 {
-    "name": "stream-headerfooter",
-    "version": "1.1.2",
-    "description": "Transmit headers and footers at the start and end of streams.",
-    "main": "main.js",
-    "scripts": {
-        "test": "nodeunit test/test.js"
-    },
-    "keywords": [
-        "headers",
-        "footers",
-        "header",
-        "footer",
-        "stream",
-        "streams",
-        "parse"
-    ],
-    "author": "Arjun Mehta",
-    "license": "MIT",
-    "dependencies": {
-        "buffertools": "~2.1.3"
-    },
-    "devDependencies": {
-        "brake": "~1.0.1",
-        "nodeunit": "~0.9.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/arjunmehta/node-stream-headerfooter.git"
-    },
-    "bugs": {
-        "url": "https://github.com/arjunmehta/node-stream-headerfooter/issues"
-    },
-    "homepage": "https://github.com/arjunmehta/node-stream-headerfooter"
+  "name": "stream-headerfooter",
+  "version": "1.1.3",
+  "description": "Transmit headers and footers at the start and end of streams.",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodeunit test/test.js"
+  },
+  "keywords": [
+    "headers",
+    "footers",
+    "header",
+    "footer",
+    "stream",
+    "streams",
+    "parse"
+  ],
+  "author": "Arjun Mehta",
+  "license": "MIT",
+  "dependencies": {
+    "buffertools": "~2.1.3"
+  },
+  "devDependencies": {
+    "brake": "~1.0.1",
+    "nodeunit": "~0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arjunmehta/node-stream-headerfooter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arjunmehta/node-stream-headerfooter/issues"
+  },
+  "homepage": "https://github.com/arjunmehta/node-stream-headerfooter"
 }
